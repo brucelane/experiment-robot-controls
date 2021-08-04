@@ -12,7 +12,7 @@ export default class Robot
         this.scene = this.experience.scene
         this.controls = this.experience.controls
         this.resources = this.experience.resources
-console.log(this.resources.items.robotModel) // BL
+        console.log(this.resources.items.robotModel) // BL
         // Debug
         this.debugFolder = this.debug.addFolder({
             title: 'robot',
