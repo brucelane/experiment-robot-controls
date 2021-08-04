@@ -12,7 +12,7 @@ export default class Robot
         this.scene = this.experience.scene
         this.gamepad = this.experience.gamepad
         this.resources = this.experience.resources
-
+console.log(this.resources.items.robotModel) // BL
         // Debug
         this.debugFolder = this.debug.addFolder({
             title: 'robot',
@@ -172,6 +172,7 @@ export default class Robot
                 if(part)
                 {
                     part.objects.push(_child)
+                    console.log(part.name, _child.name)
                 }
 
                 if(_child instanceof THREE.Mesh)
