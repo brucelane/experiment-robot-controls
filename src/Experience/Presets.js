@@ -165,13 +165,13 @@ export default class Presets
                 robotRoughness: 0.35,
                 robotMetalness: 0.8,
 
-                pointLightColor: '#2c2c2c',
+                pointLightColor: '#220011',
                 pointLightIntensity: 200,
                 pointLightDecay: 0,
                 pointLightY: 10,
                 pointLightZ: - 1.75,
 
-                spotLightColor: '#ff5d0f',
+                spotLightColor: '#330055',
                 spotLightIntensity: 500,
                 spotLightAngle: 1.6,
                 spotLightPenumbra: 0.3,
