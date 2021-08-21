@@ -7,9 +7,9 @@ export default class GamepadInterface
         this.inputs = _inputs
 
         this.elements = {}
-        this.elements.container = document.createElement('div')
-        this.elements.container.classList.add('gamepad-interface')
-        document.body.appendChild(this.elements.container)
+        //this.elements.container = document.createElement('div')
+        //this.elements.container.classList.add('gamepad-interface')
+        //document.body.appendChild(this.elements.container)
 
         this.setInputs()
     }
@@ -21,7 +21,7 @@ export default class GamepadInterface
             // Element
             const inputElement = document.createElement('div')
             inputElement.classList.add('input', `is-${_input.name}`, `is-${_input.type}`)
-            this.elements.container.appendChild(inputElement)
+            //this.elements.container.appendChild(inputElement)
 
             // Is button
             if(_input.type === 'button')

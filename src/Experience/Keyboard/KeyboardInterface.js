@@ -9,9 +9,9 @@ export default class KeyboardInterface
         this.elements = {}
 
         // Container
-        this.elements.container = document.createElement('div')
-        this.elements.container.classList.add('keyboard-interface')
-        document.body.appendChild(this.elements.container)
+        //this.elements.container = document.createElement('div')
+        //this.elements.container.classList.add('keyboard-interface')
+        //document.body.appendChild(this.elements.container)
 
         // Lines
         this.elements.lines = []
@@ -31,8 +31,8 @@ export default class KeyboardInterface
             // Line element
             const lineElement = document.createElement('div')
             lineElement.classList.add('line', `line${_lineIndex}`)
-            this.elements.container.append(lineElement)
-            this.elements.lines.push(lineElement)
+            //this.elements.container.append(lineElement)
+            //this.elements.lines.push(lineElement)
 
             // Each key
             for(const _key of _line)
