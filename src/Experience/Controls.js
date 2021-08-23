@@ -11,7 +11,7 @@ export default class Controls extends EventEmitter
         this.mode = 'gamepad'
 
         this.shoulderPressed = false
-        this.upperArmPressed = false
+        this.tetePressed = false
         this.elbowPressed = false
         this.forearmPressed = false
 
@@ -72,13 +72,13 @@ export default class Controls extends EventEmitter
         // Upper arm
         this.gamepad.inputs.buttonSquare.on('pressed', () =>
         {
-            this.upperArmPressed = true
-            this.trigger('upperArmPressed')
+            this.tetePressed = true
+            this.trigger('tetePressed')
         })
 
         this.gamepad.inputs.buttonSquare.on('unpressed', () =>
         {
-            this.upperArmPressed = false
+            this.tetePressed = false
         })
 
         // Elbow
@@ -112,6 +112,7 @@ export default class Controls extends EventEmitter
 
         this.keyboard.on('pressed', (_name) =>
         {
+            console.log(_name)
             this[_name] = true
             this.trigger(_name)
         })

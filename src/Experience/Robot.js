@@ -95,8 +95,8 @@ export default class Robot
             },
             {
                 type: 'buttonToggle',
-                regex: /^upperArm/,
-                name: 'upperArms',
+                regex: /^tete/,
+                name: 'tetes',
                 objects: [],
                 speed: 0.002,
                 easing: 0.01,
@@ -105,7 +105,7 @@ export default class Robot
                 directionMultiplier: 1,
                 min: - Infinity,
                 max: Infinity,
-                controlsName: 'upperArmPressed'
+                controlsName: 'tetePressed'
             },
             {
                 type: 'buttonToggle',
