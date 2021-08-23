@@ -21,7 +21,7 @@ export default class Camera
         })
 
         // Set up
-        this.mode = 'default' // defaultCamera \ debugCamera
+        this.mode = 'debug' //'default' defaultCamera \ debugCamera
 
         this.setInstance()
         this.setModes()

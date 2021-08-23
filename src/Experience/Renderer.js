@@ -124,6 +124,7 @@ export default class Renderer
 
     setPostProcess()
     {
+        
         this.postProcess = {}
 
         /**
@@ -176,6 +177,7 @@ export default class Renderer
                 uNoiseOffset: { value: - 0.15 },
                 uRGBShiftMultiplier: { value: 0.004 },
                 uRGBShiftOffset: { value: 0.04 },
+                uTime: { value: this.time.elapsed },
             },
             vertexShader: finalPassVertexShader,
             fragmentShader: finalPassFragmentShader
@@ -254,6 +256,8 @@ export default class Renderer
 
         if(this.usePostprocess)
         {
+            //console.log(this.time.elapsed)
+            this.postProcess.finalPass.uniforms.uTime.value = this.time.elapsed
             this.postProcess.composer.render()
         }
         else

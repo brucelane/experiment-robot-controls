@@ -65,7 +65,7 @@ export default class Experience
     }
 
     setDebug()
-    {
+    {        
         this.debug = new Pane()
         this.debug.containerElem_.style.width = '320px'
         // this.debug.containerElem_.style.maxHeight = 'calc(100vh - 8px * 2)'
