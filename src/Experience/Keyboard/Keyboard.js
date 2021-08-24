@@ -32,6 +32,7 @@ export default class Keyboard extends EventEmitter
             { code: 'ArrowRight', name: 'shoulderPressed' },
             { code: 'ArrowDown', name: 'elbowPressed' },
             { code: 'ArrowLeft', name: 'tetePressed' },
+            { code: 'KeyH', name: 'hidePressed' },
         ]
 
         window.addEventListener('keydown', (_event) =>

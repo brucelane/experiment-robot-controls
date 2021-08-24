@@ -14,6 +14,7 @@ export default class Controls extends EventEmitter
         this.tetePressed = false
         this.elbowPressed = false
         this.forearmPressed = false
+        
 
         this.clampPressure = 0
         this.torsoOrientation = { x: 0, y: 0 }
@@ -56,6 +57,11 @@ export default class Controls extends EventEmitter
             this.trigger('wireframePressed')
         })
 
+        // Hide UI
+        this.gamepad.inputs.buttonR1.on('pressed', () =>
+        {
+            this.trigger('hidePressed')
+        })
 
         // Shoulder
         this.gamepad.inputs.buttonCircle.on('pressed', () =>

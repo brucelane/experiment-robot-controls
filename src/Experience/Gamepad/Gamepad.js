@@ -96,7 +96,7 @@ export default class Gamepad extends EventEmitter
             {
                 _input.on('pressed', (_index, _name) =>
                 {
-                    // console.log('pressed', _index, _name)
+                    console.log('pressed', _index, _name)
                 })
     
                 _input.on('unpressed', (_index, _name) =>

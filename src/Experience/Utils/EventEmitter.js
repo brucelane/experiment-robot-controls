@@ -128,20 +128,19 @@ export default class
             console.warn('wrong name')
             return false
         }
-
         const that = this
         let finalResult = null
         let result = null
-
+        
         // Default args
         const args = !(_args instanceof Array) ? [] : _args
-
+        
         // Resolve names (should on have one event)
         let name = this.resolveNames(_name)
-
+        
         // Resolve name
         name = this.resolveName(name[ 0 ])
-
+        
         // Default namespace
         if(name.namespace === 'base')
         {
@@ -171,16 +170,16 @@ export default class
                 console.warn('wrong name')
                 return this
             }
-
+            
             that.callbacks[ name.namespace ][ name.value ].forEach(function(callback)
             {
                 result = callback.apply(that, args)
-
+                
                 if(typeof finalResult === 'undefined')
-                    finalResult = result
+                finalResult = result
             })
         }
-
+        
         return finalResult
     }
 

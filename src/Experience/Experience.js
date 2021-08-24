@@ -68,6 +68,7 @@ export default class Experience
     {        
         this.debug = new Pane()
         this.debug.containerElem_.style.width = '320px'
+        this.debug.containerElem_.style.display = 'none'
         // this.debug.containerElem_.style.maxHeight = 'calc(100vh - 8px * 2)'
         // this.debug.containerElem_.style.overflowY = 'scroll'
         // this.debug.containerElem_.style.position = 'fixed'

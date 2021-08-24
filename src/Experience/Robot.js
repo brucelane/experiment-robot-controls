@@ -66,6 +66,15 @@ export default class Robot
         {
             this.material.wireframe = !this.material.wireframe
         })
+        
+        this.controls.on('hidePressed', () =>
+        {
+            if (this.debug.containerElem_.style.display === 'none') {
+                this.debug.containerElem_.style.display = 'block'
+            } else {
+                this.debug.containerElem_.style.display = 'none'
+            }            
+        })
     }
 
     setModel()
